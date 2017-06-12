@@ -62,7 +62,7 @@
       serialization: {
         to: [$min, $max],
         resolution: 1
-      });
+      }
     }).change(function() {
       update($min.val(), $max.val());
     });
@@ -70,5 +70,14 @@
     appendRows();
     update($min.val(), $max.val());
   }
+  // function init() {
+  //   $('#slider').noUiSlider({
+  //     range: [0, 150], start: [65, 90], handles: 2, margin: 20, connect: true,
+  //     serialization: {to: [$min, $max],resolution: 1}
+  //   }).change(function() { update($min.val(), $max.val()); });
+  //   makeRows();
+  //   appendRows();
+  //   update($min.val(), $max.val());
+  // }
 $(init);
 }());
